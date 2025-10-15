@@ -44,4 +44,6 @@ yarn-error.log*
 
 # idea files
 .idea
+.vscode
+.github
 .github/instructions/Mentor.instructions.md

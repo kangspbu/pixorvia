@@ -13,6 +13,7 @@ export const env = createEnv({
     POLAR_ACCESS_TOKEN: z.string(),
     POLAR_WEBHOOK_SECRET: z.string(),
     IMAGEKIT_PRIVATE_KEY: z.string(),
+    IMAGEKIT_PUBLIC_KEY: z.string(),
     NODE_ENV: z
       .enum(["development", "test", "production"])
       .default("development"),
@@ -36,14 +37,18 @@ export const env = createEnv({
   runtimeEnv: {
     DATABASE_URL: process.env.DATABASE_URL,
     NODE_ENV: process.env.NODE_ENV,
+
     BETTER_AUTH_SECRET: process.env.BETTER_AUTH_SECRET,
     NEXT_PUBLIC_BETTER_AUTH_URL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL,
     BETTER_AUTH_URL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL,
+
     POLAR_ACCESS_TOKEN: process.env.POLAR_ACCESS_TOKEN,
     POLAR_WEBHOOK_SECRET: process.env.POLAR_WEBHOOK_SECRET,
+
     IMAGEKIT_PRIVATE_KEY: process.env.IMAGEKIT_PRIVATE_KEY,
     NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY:
       process.env.NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY,
+    IMAGEKIT_PUBLIC_KEY: process.env.NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY,
     NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT:
       process.env.NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT,
   },
