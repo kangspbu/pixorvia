@@ -1,7 +1,7 @@
 "use client";
 
+import { BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { usePathname } from "next/navigation";
-import { BreadcrumbPage } from "../ui/breadcrumb";
 
 const BreadcrumbPageClient = ({}) => {
   const path = usePathname();

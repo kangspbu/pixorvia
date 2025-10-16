@@ -1,8 +1,5 @@
 "use server";
 
-import { UserButton } from "@daveyplate/better-auth-ui";
-import { Settings, Sparkles, User } from "lucide-react";
-import Link from "next/link";
 import {
   Sidebar,
   SidebarContent,
@@ -11,7 +8,10 @@ import {
   SidebarGroupContent,
   SidebarGroupLabel,
   SidebarMenu,
-} from "../ui/sidebar";
+} from "@/components/ui/sidebar";
+import { UserButton } from "@daveyplate/better-auth-ui";
+import { Settings, Sparkles, User } from "lucide-react";
+import Link from "next/link";
 import Credits from "./credits";
 import MobileSidebarClose from "./mobile-sidebar-close";
 import SidebarMenuItems from "./sidebar-menu-items";
@@ -23,15 +23,15 @@ export async function AppSidebar() {
       <SidebarContent className="px-3">
         <MobileSidebarClose />
         <SidebarGroup>
-          <SidebarGroupLabel className="text-primary mt-6 mb-8 flex flex-col items-start justify-center px-2">
+          <SidebarGroupLabel className="text-primary mt-6 mb-8 flex flex-col items-start justify-start px-2">
             <Link href="/" className="mb-1 flex items-center gap-2">
               <Sparkles className="text-primary h-6 w-6" />
               <p className="from-primary to-primary/70 bg-gradient-to-r bg-clip-text text-2xl font-bold tracking-tight text-transparent">
-                Pixorvia
+                AI Image
               </p>
             </Link>
             <p className="text-muted-foreground ml-8 text-sm font-medium tracking-wide">
-              AI Image Editor
+              Editor
             </p>
           </SidebarGroupLabel>
           <SidebarGroupContent>

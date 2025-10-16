@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 
+import BreadcrumbPageClient from "@/components/custom/sidebar/breadcrumb-page-client";
+import { AppSidebar } from "@/components/custom/sidebar/sidebar-app";
 import { Providers } from "@/components/provider";
-import BreadcrumbPageClient from "@/components/sidebar/breadcrumb-page-client";
-import { AppSidebar } from "@/components/sidebar/sidebar-app";
 import {
   Breadcrumb,
   BreadcrumbItem,

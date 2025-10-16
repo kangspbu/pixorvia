@@ -1,8 +1,8 @@
-import { getUserCredit } from "@/action/user";
+import { getUserCredit } from "@/action/userActions";
 import { Coins, Sparkles } from "lucide-react";
 
-export default function Credits() {
-  const credits = getUserCredit();
+export default async function Credits() {
+  const credits = await getUserCredit();
   return (
     <div className="group flex items-center gap-2">
       <div className="flex items-center gap-1.5">
@@ -22,3 +22,5 @@ export default function Credits() {
     </div>
   );
 }
+
+// kalo fetch boleh tampa await, tapi kalo action harus await

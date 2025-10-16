@@ -1,5 +1,5 @@
 const Page = ({}) => {
-  return <div className="page">SOOS</div>;
+  return <div>soos</div>; // Navigate to the new post page
 };
 
 export default Page;

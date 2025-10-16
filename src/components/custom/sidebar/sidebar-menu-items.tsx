@@ -1,10 +1,14 @@
 "use client";
 
+import {
+  SidebarMenuButton,
+  SidebarMenuItem,
+  useSidebar,
+} from "@/components/ui/sidebar";
 import { cn } from "@/lib/utils";
 import { FolderOpen, LayoutDashboard, Settings, Wand2 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SidebarMenuButton, SidebarMenuItem, useSidebar } from "../ui/sidebar";
 
 export default function SidebarMenuItems() {
   const path = usePathname();

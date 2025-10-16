@@ -1,9 +1,9 @@
 "use client";
 
 import { getProducts } from "@/action/getProducts";
+import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth-client";
 import { Crown, Sparkles } from "lucide-react";
-import { Button } from "../ui/button";
 
 const Upgrade = ({}) => {
   const upgradeHandle = async () => {
