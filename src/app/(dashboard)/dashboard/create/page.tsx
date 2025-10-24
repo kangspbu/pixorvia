@@ -181,13 +181,9 @@ const Page = ({}) => {
     setTransformations((prev) =>
       prev.filter((transform: Transformation) => {
         if (type === "background" && transform.aiRemoveBackground) {
-          console.log("removing background");
-
           return false;
         }
         if (type === "upscale" && transform.aiUpscale) {
-          console.log("removing upscale");
-
           return false;
         }
         if (
@@ -195,11 +191,8 @@ const Page = ({}) => {
           transform.raw?.includes("fo-") &&
           transform.raw.includes("ar-1-1")
         ) {
-          console.log("removing object crop");
-
           return false;
         }
-        console.log("keeping transformation", transform);
 
         return true;
       }),

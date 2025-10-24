@@ -1,4 +1,5 @@
 import { FlatCompat } from "@eslint/eslintrc";
+import reactYouMightNotNeedAnEffect from "eslint-plugin-react-you-might-not-need-an-effect";
 import tseslint from "typescript-eslint";
 
 const compat = new FlatCompat({
@@ -6,6 +7,7 @@ const compat = new FlatCompat({
 });
 
 export default tseslint.config(
+  reactYouMightNotNeedAnEffect.configs.recommended,
   {
     ignores: [".next"],
   },
