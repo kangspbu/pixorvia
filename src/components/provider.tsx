@@ -32,8 +32,8 @@ export function Providers({ children }: { children: ReactNode }) {
           console.log(`Error fetching session: ${String(e)}`);
         }
       }}
-      settings={{
-        url: "/dashboard/settings", // Your custom settings page URL
+      account={{
+        viewPaths: { SETTINGS: "/dashboard/settings" },
       }}
       Link={Link}
     >
